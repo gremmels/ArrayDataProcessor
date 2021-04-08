@@ -34,6 +34,6 @@ The following options indicate the operations to be performed. All options are o
 	Returns the minimum of the dataset.
 --normalize
 	A distribution for all values in the specified column is calculated. Then all datasets whose value in this column is below the calculated percentile are filterd out.
-	The values of the following control spots are not used for calculation of the percentile: MY-QC   Ctrl-Pos-555   Ctrl-Pos-647   Ctrl-Stringent-555   Ctrl-Stringent-647   Empty_NCTRL
+	The values of the following control spots are not used for calculation of the percentile: MY-QCÂ  Â Ctrl-Pos-555Â Â  Ctrl-Pos-647Â Â  Ctrl-Stringent-555Â Â Â Ctrl-Stringent-647Â Â  Empty_NCTRL
 
 If any error occurs during data processing (e.g. non readable numbers, wrong file format, all values of a dataset are filtered...) an error file is generated which contains some error descriptions.
