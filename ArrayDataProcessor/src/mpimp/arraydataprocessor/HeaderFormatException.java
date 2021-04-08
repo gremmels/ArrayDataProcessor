@@ -1,0 +1,42 @@
+/*
+ArrayDataProcessor: an evaluation tool which takes one or more files in 
+GenPix Results format (*.gpr) and does several statistical operations 
+on the data. Output of results either in MS Excel (*.xls, *.xlsx) or *.csv
+format.
+
+Copyright (C) 2015,  gremmels(at)mpimp-golm.mpg.de
+
+ArrayDataProcessor is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+Contributors:
+gremmels(at)mpimp-golm.mpg.de - initial API and implementation
+*/
+package mpimp.arraydataprocessor;
+
+public class HeaderFormatException extends Exception {
+
+	private static final long serialVersionUID = -3154332793119576304L;
+
+	public HeaderFormatException(String message) {
+		message_ = message;
+	}
+
+	@Override
+	public String getMessage() {
+		return message_ + "\n" + super.getMessage();
+	}
+
+	String message_;
+
+}
